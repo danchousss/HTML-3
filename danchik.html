@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Центрирование с кнопками и кругом</title>
+    <title>Центрирование с фото, текстом и кнопками</title>
     <style>
         body {
             margin: 0;
@@ -17,15 +17,14 @@
             position: relative;
             width: 350px;
             height: 500px;
-            background-color: #9d49b6;
-            border: 2px solid #9d49b6;
+            background-color: #fbaa1d;
+            border: 2px solid #fbaa1d;
             border-radius: 45px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
-
 
         .circle {
             position: absolute;
@@ -34,15 +33,17 @@
             height: 100px;
             background-color: white;
             border-radius: 50%;
-            border: 3px solid #9d49b6;
+            border: 3px solid #fbaa1d;
+            overflow: hidden; 
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .circle img {
             width: 100%;
-            height: auto;
-            object-fit: cover;
+            height: 100%;
+            object-fit: cover; 
         }
 
         .about-me {
@@ -50,6 +51,7 @@
             padding: 0 20px;
             color: white;
             font-size: 18px;
+            text-align: center;
         }
 
         .buttons {
@@ -73,14 +75,14 @@
 <body>
     <div class="rectangle">
         <div class="circle">
-            <img src="c:\Users\lenovo\Downloads\photo_2023-02-11_23-58-22.jpg" alt="Моё фото">
+            <img src="c:/Users/lenovo/Downloads/photo_2023-02-11_23-58-22.jpg" alt="Моё фото">
         </div>
         <div class="about-me">
-            <p>ABOUT ME
-                Hello ,my name is Daniel ,I am simple guy,now II am learning HTML 
-                MY SKILLS:
-
-
+            <p>ABOUT ME<br>
+               Hello, my name is Daniel. I am a simple guy, now learning HTML.<br>
+               MY SKILLS:
+               knowledge of Russian,Kyrgyz and English
+               knowledge of basics of Java language
             </p>
         </div>
         <div class="buttons">
