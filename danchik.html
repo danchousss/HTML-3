@@ -12,6 +12,19 @@
             justify-content: center; 
             align-items: center; 
         }
+        
+        .rectangle {
+            position: relative;
+            width: 350px;
+            height: 500px;
+            background-color: #9d49b6;
+            border: 2px solid #9d49b6;
+            border-radius: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
 
         .circle {
@@ -25,6 +38,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .circle img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .about-me {
+            margin-top: 60px;
+            padding: 0 20px;
+            color: white;
+            font-size: 18px;
         }
 
         .buttons {
@@ -48,11 +73,19 @@
 <body>
     <div class="rectangle">
         <div class="circle">
-            <a href="#" class="button">Button</a>
+            <img src="c:\Users\lenovo\Downloads\photo_2023-02-11_23-58-22.jpg" alt="Моё фото">
+        </div>
+        <div class="about-me">
+            <p>ABOUT ME
+                Hello ,my name is Daniel ,I am simple guy,now II am learning HTML 
+                MY SKILLS:
+
+
+            </p>
         </div>
         <div class="buttons">
-            <a href="https://www.instagram.com/твой_инстаграм" class="button">Instagram</a>
-            <a href="https://github.com/твой_гитхаб" class="button">GitHub</a>
+            <a href="https://www.instagram.com/danchoouss/" class="button">Instagram</a>
+            <a href="https://github.com/danchousss" class="button">GitHub</a>
         </div>
     </div>
 </body>
