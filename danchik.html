@@ -11,12 +11,13 @@
             display: flex;
             justify-content: center; 
             align-items: center; 
+            background-color: rgb(25, 24, 24);
         }
         
         .rectangle {
             position: relative;
-            width: 350px;
-            height: 500px;
+            width: 550px;
+            height: 600px;
             background-color: #fbaa1d;
             border: 2px solid #fbaa1d;
             border-radius: 45px;
@@ -29,8 +30,8 @@
         .circle {
             position: absolute;
             top: -50px;
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             background-color: white;
             border-radius: 50%;
             border: 3px solid #fbaa1d;
@@ -47,28 +48,56 @@
         }
 
         .about-me {
-            margin-top: 60px;
+            margin-top: 100px; /* Увеличиваем отступ сверху для большего пространства */
             padding: 0 20px;
             color: white;
-            font-size: 18px;
             text-align: center;
+        }
+
+        .about-me p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .about-me h2 {
+            font-size: 24px;
+            margin: 10px 0;
+            font-family: 'Arial', sans-serif; /* Используем приятный шрифт */
         }
 
         .buttons {
             position: absolute;
             bottom: 20px;
+            right: 20px; /* Перемещаем кнопки правее */
             display: flex;
             gap: 10px;
         }
 
-        .button {
+        .github-btn, .instagram-btn {
+            display: inline-flex;
+            align-items: center;
             padding: 10px 20px;
-            background-color: #4e9cdf;
             color: white;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
             font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .github-btn {
+            background-color: black;
+        }
+
+        .instagram-btn {
+            background-color: #E1306C;
+        }
+
+        .github-btn img, .instagram-btn img {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
         }
     </style>
 </head>
@@ -78,16 +107,20 @@
             <img src="c:/Users/lenovo/Downloads/photo_2023-02-11_23-58-22.jpg" alt="Моё фото">
         </div>
         <div class="about-me">
-            <p>ABOUT ME<br>
-               Hello, my name is Daniel. I am a simple guy, now learning HTML.<br>
-               MY SKILLS:
-               knowledge of Russian,Kyrgyz and English
-               knowledge of basics of Java language
-            </p>
+            <h2>ABOUT ME</h2>
+            <p>Hello, my name is Daniel. I am a simple guy from Bishkek, now studying in Ala Too university to be a fullstack engineer .</p>
+            <h2>MY SKILLS</h2>
+            <p>Knowledge of Russian, Kyrgyz, and English. Knowledge of basics of Java language.</p>
         </div>
         <div class="buttons">
-            <a href="https://www.instagram.com/danchoouss/" class="button">Instagram</a>
-            <a href="https://github.com/danchousss" class="button">GitHub</a>
+            <a href="https://github.com/danchousss" class="github-btn">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">
+                View my GitHub
+            </a>
+            <a href="https://www.instagram.com/danchoouss/" class="instagram-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram logo">
+                View my Instagram
+            </a>
         </div>
     </div>
 </body>
