@@ -1,29 +1,59 @@
-<style>
-    body {
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центрирование с кнопками и кругом</title>
+    <style>
+        body {
             margin: 0;
             height: 100vh;
             display: flex;
             justify-content: center; 
             align-items: center; 
         }
-    .rectangle {
-            width: 350px;     
-            height: 500px;    
-            background-color: #9d49b6;
-            border: 2px solid #9d49b6;   
-            border-radius: 45px;
-            transform: translateX(-20px); 
-            
 
-                   
+
+        .circle {
+            position: absolute;
+            top: -50px;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid #9d49b6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-    </style>
-    <style>
-        .instagram{
+
+        .buttons {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #4e9cdf;
             color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
         }
     </style>
-<button class="instagram">
-    instagram
-</button>
-<div class ="rectangle"></div>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="circle">
+            <a href="#" class="button">Button</a>
+        </div>
+        <div class="buttons">
+            <a href="https://www.instagram.com/твой_инстаграм" class="button">Instagram</a>
+            <a href="https://github.com/твой_гитхаб" class="button">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
